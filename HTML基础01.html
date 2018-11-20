@@ -1,0 +1,126 @@
+<!--
+	注释区域,代码不执行
+	快捷键:command +/
+-->
+<!--
+	<!DOCTYPE html>
+	文档的类型说明,浏览器可以通过这行代码知晓当前的HTML版本,也指明这是HTML5文档
+-->
+<!DOCTYPE html>
+<!--
+	HTML标签,双标签 所有跟HTML标签相关的代码
+-->
+<html>
+	<!--head 双标签,负责网页的设置信息,比如设置网页标题,字符集格式,搜索引擎等-->
+	<head>
+		<!--meta设置字符集 utf-8编码格式保证中文不乱码-->
+		<meta charset="UTF-8">
+			<!--标题设置-->
+		<title>慧娟的第一天</title>
+	</head>
+	<!--网页的主要编码区域 body-->
+	<body>
+		<!--1.标题标签 h1-h6字号逐级减小-->
+		<h1>啊</h1>
+		<h2>啊</h2>
+		<h3>啊</h3>
+		<h4>啊</h4>
+		<h5>啊</h5>
+		<h6>啊</h6>
+		<!--
+			n*4 设置4个n标签
+			n$*4 $符号,自增符号从1开始 n1-n4
+			n>m n标签中嵌套m标签
+			n+m n和m是兄弟级标签,相邻标签
+			n>m*2 n标签中放两个m标签
+			(n+m)*2 n和m相邻标签 添加两次
+		-->
+		<!--系统默认字号为16px px 像素单位-->
+		<!-- p 段落标签 
+			br 换行标签
+		-->
+		<p>
+			啊啊啊啊啊<br />
+			啊 啊啊 啊啊啊
+			
+		</p>
+		<!--强调标签 
+		em 倾斜标签 strong 加粗标签-->
+		<em>啊哦</em>
+		<strong>啊啊啊啊啊</strong>
+		<!--
+			br 换行
+			hr 分割线
+		-->
+		<hr />
+		<!--图片标签 img
+			src属性:设置要展示的图片的路径
+			img 既可以展示本地图片 也可以展示网络图片
+			alt属性 在图片路径出错无法展示的时候,会出现显示此提示内容
+		-->
+		<img src="img/1.png"/>
+		<img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=900588733,3074528440&fm=27&gp=0.jpg"/>
+		<!--音频播放
+			视频播放
+			controls 控制面板.默认值是controlsvvv
+		-->
+		<video src="img/1.mp4"controls="controls"></video>
+		<audio src="img/2.mp3"controls="controls"></audio>
+		<!--超链接标签 也叫锚点标签 a
+			herf属性:放置链接,会直接跳转到对应链接的网页中;
+			属性为空,则会回到网页顶部
+			属性###,则无意义无效果
+		-->
+		<a href="http://www.baidu.com">百度一下</a>
+		<a href="">回到顶部</a>
+		<a href="###">点了木有用</a>
+		<!--
+			根据元素的功能特性:
+			块元素:例如h1,p;
+			1.独占一行,默认宽度为浏览器宽度.
+			2.可以手动设置宽高.
+			行元素:例如 em,strong,a等
+			1.多个行元素相邻,共用一行,默认宽高就是文本的大小.
+			2.手动设置宽高无效,其宽度由内容撑起
+		-->
+		<!--无意义标签
+			div:块元素,多用于网页布局设计
+			span:行元素
+		-->
+		<div style="background-color: pink; height: 100px;">
+			第一个div
+		</div>
+		<span style="height: 100px;">
+			无意义行元素
+		</span>
+		<!--列表标签,块元素
+			有序列表 ol>li(list列表)
+			无序列表 ul>li
+			有序有1.2.3 无序没有
+			自定义标签 dl>dt+dd
+		-->
+		<ol>
+			<li>热干面</li>
+			<li>擀面皮</li>
+			<li>凉面</li>
+		</ol>
+		<ul>
+			<li>可乐</li>
+			<li>雪碧</li>
+			<li>美年达</li>
+		</ul>
+		<!--自定义列表
+			dt 相当于标题 dd为其下分类
+		-->
+		<dl>
+			<dt> 王者荣耀</dt>
+			<dd> 李白</dd>
+			<dd>孙尚香</dd>
+			<dt>LOL</dt>
+			<dd>盖伦</dd>
+			<dd>琴女</dd>
+			
+		</dl>
+		
+	</body>
+</html>
